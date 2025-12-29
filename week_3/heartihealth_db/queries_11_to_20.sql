@@ -84,7 +84,7 @@ SELECT
     date AS wearable_date,
     cardiodiagnosis_cardio_id
 FROM wearabledevicedata
-WHERE cardiodiagnosis_cardio_id BETWEEN 'CID100' AND 'CID200';
+WHERE cardiodiagnosis_cardio_id BETWEEN 'cid100' AND 'cid200';
 
 
 

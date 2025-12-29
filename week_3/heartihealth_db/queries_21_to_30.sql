@@ -99,58 +99,14 @@ WHERE oldpeak IS NOT NULL;
 -- Get the list of tests done between January 1, 2015, and January 31, 2019.
 
 SELECT
-    'Blood Test' AS test_type,
     blood_id AS test_id,
     date AS test_date,
+    bloodpressure,
+    fbs,
+    thal,
+    serumcholesterol,
     cardiodiagnosis_cardio_id
 FROM bloodtest
-WHERE date::date 
-BETWEEN '2015-01-01' AND '2019-01-31'
-
-UNION ALL
-
-SELECT
-    'ECG Test' AS test_type,
-    ecg_id AS test_id,
-    date AS test_date,
-    cardiodiagnosis_cardio_id
-FROM ecgreport
-WHERE date::date 
-BETWEEN '2015-01-01' AND '2019-01-31'
-
-
-UNION ALL
-
-SELECT
-    'X-Ray Test' AS test_type,
-    xray_id AS test_id,
-    date AS test_date,
-    cardiodiagnosis_cardio_id
-FROM xray
-WHERE date::date 
-BETWEEN '2015-01-01' AND '2019-01-31'
-
-
-UNION ALL
-
-SELECT
-    'Symptom Test' AS test_type,
-    symptom_id AS test_id,
-    date AS test_date,
-    cardiodiagnosis_cardio_id
-FROM symptom
-WHERE date::date 
-BETWEEN '2015-01-01' AND '2019-01-31'
-
-
-UNION ALL
-
-SELECT
-    'Wearable Test' AS test_type,
-    wearable_device_id AS test_id,
-    date AS test_date,
-    cardiodiagnosis_cardio_id
-FROM wearabledevicedata
 WHERE date::date 
 BETWEEN '2015-01-01' AND '2019-01-31'
 
