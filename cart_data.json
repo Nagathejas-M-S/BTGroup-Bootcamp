@@ -1,0 +1,33 @@
+{
+  "cart": [
+    {
+      "itemCode": "1",
+      "description": "shirt",
+      "quantity": 20,
+      "pricePerUnit": 200,
+      "totalPrice": 4000
+    },
+    {
+      "itemCode": "3",
+      "description": "pant",
+      "quantity": 10,
+      "pricePerUnit": 800,
+      "totalPrice": 8000
+    },
+    {
+      "itemCode": "6",
+      "description": "sock",
+      "quantity": 30,
+      "pricePerUnit": 50,
+      "totalPrice": 1500
+    }
+  ],
+  "grandTotal": 13500,
+  "email": "hi@karunya.edu",
+  "invoiceData": {
+    "invoiceNumber": "INV-29548",
+    "invoiceDate": "2026-01-02T09:41:58.941Z",
+    "finalAmount": 16116.57
+  },
+  "timestamp": "2026-01-02T09:42:08.442Z"
+}
